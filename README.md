@@ -7,3 +7,8 @@
 
 [Link](https://github.com/apourzare/python-course/tree/section-02)
 --------------------
+
+# Section 03
+
+[Link](https://github.com/apourzare/python-course/tree/section-03)
+--------------------
