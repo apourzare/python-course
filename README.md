@@ -1,100 +1,94 @@
-# Section 02
+# Section 03
 
-## Basic Input and Output
+## Loop
 
-### Print Statement
+### While
 
 ```python
-print("Hello, World!")
+count = 1
+while count <= 5:
+  print("Count is:", count)
+  count += 1
+# Output: 1, 2, 3, 4, 5
 ```
 
-### Getting User Input
+### For
 
 ```python
-name = input("Enter your name: ")
-print("Hello, " + name)
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+  print("Fruit:", fruit)
+# Output: apple, banana, cherry
 ```
 
 --------
 
-## Basic Data Types
+## Helper Function in Loop
 
-### Integers and Floats
-
-```python
-x = 10  # int
-y = 3.14  # float
-```
-
-### Strings
+### Range
 
 ```python
-name = "Amin"
+for i in range(5):
+  print("Number:", i)
+# Output: 0, 1, 2, 3, 4
 ```
 
-### Lists
+### Range Between two number
 
 ```python
-fruits = ["apple", "banana", "cherry"]
-print(fruits[0])  # apple
-print(fruits[1])  # banana
+for i in range(2, 6):
+  print("Number:", i)
+# Output: 2, 3, 4, 5
 ```
 
-------------------
-
-## Basic Operators
-
-### Arithmetic Operators
+### Range Between two number with Stepper
 
 ```python
-x = 5
-y = 2
-
-print(x + y)  # 7
-print(x - y)  # 3
-print(x * y)  # 10
-print(x / y)  # 2.5
-print(x % y)  # 1 (modulus)
+for i in range(1, 10, 2):
+  print("Odd number:", i)
+# Output: 1, 3, 5, 7, 9
 ```
 
-### Comparison Operators
+--------
+
+## Work with Lists
+
+### Declare List
 
 ```python
-x = 5
-y = 10
-
-print(x == y)  # False
-print(x != y)  # True
-print(x > y)  # False
-print(x < y)  # True
+names = ["Amin", "Sara", "Ali"]
+print(names)
 ```
 
----
-
-## Basic Control Flow
-
-### If Statement
+### Add to List
 
 ```python
-x = 10
+names = ["Amin", "Sara", "Ali"]
+names.append("Reza")
+print(names)  # Output: ["Amin", "Sara", "Ali", "Reza"]
 
-if x > 5:
-  print("x is greater than 5")
 ```
 
-### For Loop
+### Get an Item from List
 
 ```python
-for fruit in fruits:
-  print(fruit)
+names = ["Amin", "Sara", "Ali"]
+print(names[0])  # Output: Amin
+print(names[-1])  # Output: Reza
 ```
 
-### While Loop
+### Remove an Item from List
 
 ```python
-count = 0
-
-while count < 5:
-  print(count)
-  count += 1
+names = ["Amin", "Sara", "Ali", "Reza"]
+names.remove("Sara")
+print(names)  # Output: ["Amin", "Ali", "Reza"]
 ```
+
+------------
+
+## Exercises
+
+- Write a program that prints numbers from 1 to 10.
+- Write a program that prints each item in a list of strings in reverse order.
+- Use a `for` loop to calculate the sum of numbers from 1 to 20.
